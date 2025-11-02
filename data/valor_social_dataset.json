@@ -1,0 +1,2650 @@
+[
+  {
+    "text": "Ayudar a los demás nos hace mejores personas.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La paciencia es una gran aliada en los momentos difíciles.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Escuchar a otros es una muestra de respeto.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar el planeta es cuidar nuestro futuro.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cada día es una nueva oportunidad para aprender.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser amable no cuesta nada y cambia mucho.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El trabajo en equipo siempre da mejores resultados.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Compartir conocimientos hace crecer a todos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Reconocer los errores es el primer paso para mejorar.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Sonreír puede alegrar el día de alguien más.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El respeto es la base de toda convivencia.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser empático nos acerca más como sociedad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cada pequeño gesto de bondad suma mucho.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Los amigos verdaderos se apoyan siempre.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La honestidad genera confianza y respeto.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El perdón libera y sana el corazón.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar de los animales muestra sensibilidad y amor.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Apoyar los sueños ajenos también es un acto de amor.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser amable en redes sociales también cuenta.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El respeto digital también es respeto real.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Agradecer hace que valoremos más lo que tenemos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Defender a quien no puede hacerlo es valentía.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Incluir a todos enriquece al grupo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La diversidad nos hace más fuertes como comunidad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Pedir disculpas cuando nos equivocamos es de valientes.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Celebrar los logros de otros también nos alegra.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La solidaridad hace la diferencia en momentos difíciles.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Respetar las opiniones diferentes nos hace madurar.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar el agua es responsabilidad de todos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Reciclar es un pequeño acto con gran impacto.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Enseñar con paciencia es un regalo valioso.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La generosidad multiplica la felicidad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Acompañar a quien sufre es un acto de humanidad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Promover la paz empieza en nuestras palabras.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar a los abuelos es honrar nuestra historia.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Estudiar nos abre puertas y nos da oportunidades.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Compartir la comida es compartir amor.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Proteger a los más débiles es nuestra obligación.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Decir la verdad construye relaciones sólidas.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La comunicación respetuosa evita conflictos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Valorar el esfuerzo de los demás nos hace mejores.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Respetar los turnos muestra educación y paciencia.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ceder el asiento es un gesto de cortesía importante.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Colaborar con las tareas del hogar es responsabilidad compartida.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La tolerancia nos permite vivir en armonía.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Aprender de otras culturas nos enriquece.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Practicar deportes en equipo nos enseña cooperación.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Felicitar sinceramente alegra corazones.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Donar lo que no usamos puede ayudar a muchos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Plantar árboles es invertir en el futuro.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Escuchar música juntos crea buenos momentos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Leer nos transporta a otros mundos y nos hace crecer.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Conversar en familia fortalece los lazos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Perdonar libera peso del alma.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser puntual muestra respeto por el tiempo ajeno.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cumplir las promesas genera confianza.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar las plantas nos conecta con la naturaleza.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Elogiar el trabajo bien hecho motiva a seguir mejorando.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La empatía es ponerse en los zapatos del otro.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Respetar las normas hace más fácil la convivencia.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Compartir experiencias nos une como grupo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Buscar soluciones en vez de culpables es más productivo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La creatividad florece cuando hay respeto mutuo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Mediar en conflictos ayuda a restaurar la paz.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Valorar las diferencias nos hace más comprensivos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Dar las gracias es un hábito que transforma.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Preguntar antes de juzgar evita malentendidos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Apoyar causas justas multiplica el bien.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La responsabilidad individual mejora el todo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Compartir información útil beneficia a la comunidad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Respetar los espacios públicos es cuidar lo de todos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La lectura compartida une generaciones.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Incentivar talentos ajenos enriquece a la sociedad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Prevenir la violencia empieza en el diálogo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Reconocer nuestros privilegios nos hace más humildes.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser mentor de alguien es dejar huella positiva.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Denunciar injusticias es un deber ciudadano.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Proteger la privacidad de otros es respeto básico.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Consumir responsablemente cuida el medio ambiente.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Aprender idiomas abre puertas y mentes.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La curiosidad bien orientada genera conocimiento.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuestionar constructivamente mejora procesos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Inspirar a otros con nuestro ejemplo vale oro.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Admitir ignorancia es el primer paso para aprender.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Practicar la gratitud mejora nuestro bienestar.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Defender los derechos de todos fortalece la democracia.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Crear espacios seguros permite que todos prosperen.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Reducir el consumo de plástico ayuda a los océanos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Votar conscientemente construye mejor futuro.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Validar las emociones ajenas crea conexión real.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Investigar antes de opinar evita propagar errores.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Fomentar el diálogo disminuye la polarización.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar la salud mental es tan importante como la física.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Respetar los límites personales es fundamental.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La inclusión beneficia a toda la sociedad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Promover la igualdad es tarea de todos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Aprender de los errores nos hace más sabios.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Dar segundas oportunidades permite el crecimiento.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Hoy el cielo está nublado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El bus pasó con cinco minutos de retraso.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Mañana habrá reunión en la oficina.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El experimento terminó a las tres de la tarde.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La tienda abre todos los días a las nueve.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Mi gato duerme casi todo el día.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El tren llega a la estación central.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El correo fue entregado esta mañana.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La temperatura bajó durante la noche.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Hoy comienzan las clases en la escuela.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El parque se encuentra al final de la calle.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La lámpara está encendida desde anoche.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El informe será entregado mañana.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El celular se quedó sin batería.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La película dura dos horas y media.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El avión aterrizó sin problemas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El reloj marca las diez y cuarto.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El museo cierra los lunes.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El camino estaba cubierto de hojas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El semáforo cambió a verde.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El libro tiene trescientas páginas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La reunión se programó para el jueves.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El edificio tiene diez pisos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La pizza llega en treinta minutos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El partido comienza a las ocho.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Las llaves están sobre la mesa.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El supermercado está a dos cuadras.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La clase dura noventa minutos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El documento pesa cinco megabytes.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El perro es de raza mestiza.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La silla es de madera.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El agua está a temperatura ambiente.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El jardín mide cien metros cuadrados.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La planta necesita riego semanal.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El café está recién hecho.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La ventana da hacia el norte.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El ascensor está en el tercer piso.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La computadora se reinició sola.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El pasillo es estrecho.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La lámpara usa bombillas LED.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El cajón está cerrado con llave.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La sala tiene cuatro ventanas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El teléfono vibró tres veces.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La alarma sonará a las seis.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El cuadro está colgado en la pared.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La impresora está sin papel.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El paquete llegó por courier.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La estación está a diez minutos caminando.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El refrigerador hace un ruido leve.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La puerta se cierra automáticamente.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El espejo está empañado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La batería dura aproximadamente seis horas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El bolígrafo es de tinta azul.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La carpeta contiene veinte documentos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El switch está en posición apagado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La conexión es inalámbrica.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El foco se fundió ayer.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La contraseña tiene ocho caracteres.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El sobre está sellado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La mochila pesa dos kilos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El calendario está desactualizado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La pantalla mide quince pulgadas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El termo mantiene la temperatura por horas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La alfombra es de color beige.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El archivo se guardó en la nube.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La licuadora tiene tres velocidades.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El jabón es antibacterial.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La toalla está húmeda.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El control remoto necesita pilas nuevas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La bicicleta tiene cambios de velocidad.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El reloj es digital.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La caja está vacía.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El texto tiene formato justificado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La habitación está ventilada.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El producto viene con garantía.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La salida está señalizada.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El código tiene diez dígitos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La cinta está pegajosa.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El recipiente es de plástico.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La estantería tiene cinco repisas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El instructivo viene en tres idiomas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La tarjeta expira en diciembre.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El cable mide dos metros.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La notificación llegó por email.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El micrófono está en modo silencio.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La configuración es predeterminada.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El formulario requiere firma.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La suscripción se renueva mensualmente.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El testimonio fue grabado en video.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La licencia está vigente.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El menú tiene opciones vegetarianas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La reserva está confirmada.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El vuelo sale desde la terminal dos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La maleta pasa el límite de peso.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El registro quedó guardado en el sistema.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La conexión es estable.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El horario es de lunes a viernes.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La etiqueta indica el precio.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "No me interesa lo que piensen los demás.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Siempre termino haciendo todo solo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La gente solo se preocupa por sí misma.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Nada cambia aunque uno se esfuerce.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No vale la pena intentarlo otra vez.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Nunca me escuchan cuando hablo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todo está cada vez peor.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "A nadie le importa lo que pasa aquí.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las personas prometen y nunca cumplen.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No confío en nadie.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Es inútil tratar de hacer las cosas bien.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Siempre hay alguien que se aprovecha.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Estoy cansado de que nadie valore mi esfuerzo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El mundo es un lugar injusto.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Da lo mismo lo que uno haga.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todo el trabajo termina siendo en vano.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Nunca hay reconocimiento para los que hacen bien las cosas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "A veces pienso que nada tiene sentido.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No sirve de nada ser amable.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La mayoría solo piensa en su propio beneficio.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Me da igual si molesto a otros con mi música.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Total nadie va a notar si hago trampa.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Para qué voy a ayudar si nadie me ayuda a mí.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los que lloran son débiles.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Cada uno que se las arregle como pueda.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Ese problema no es mío.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No pienso disculparme por decir la verdad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si no pueden aguantar una broma es su problema.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los profesores no saben nada de la vida real.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todo lo que dicen en las noticias es mentira.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La ciencia es solo teorías que cambian todo el tiempo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No creo en nada de lo que me dicen.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los demás son muy sensibles por todo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Me importa poco si eso ofende a alguien.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todos los políticos son corruptos sin excepción.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No me importa contaminar si a mí me conviene.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Que se preocupen otros por el medio ambiente.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los animales no sienten como nosotros.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Está bien mentir si con eso salgo ganando.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La honestidad no lleva a ningún lado.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Solo los tontos siguen las reglas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Hacer trampa es normal, todos lo hacen.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No voy a compartir porque luego me piden más.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Eso de reciclar es pérdida de tiempo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los adultos solo quieren controlarnos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Nadie tiene derecho a decirme qué hacer.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si me critican es porque tienen envidia.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los que estudian son los raros del curso.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Pedir ayuda es de débiles.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No pienso trabajar en grupo, siempre hago todo yo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Mejor solo que mal acompañado, así que paso de todos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los problemas ajenos no me incumben.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si alguien sufre bullying es porque se deja.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No es mi culpa que otros sean tan sensibles.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La vida es injusta y no hay nada que hacer.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Solo importa ganar, no importa cómo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las reglas están para romperlas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Que se jodan los que no pueden defenderse.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No creo en ninguna autoridad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todo el mundo miente, así que yo también puedo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los que son diferentes no deberían estar aquí.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Me da risa cuando alguien se cae o se lastima.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Compartir fotos vergonzosas de otros es divertido.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No voy a borrar ese comentario ofensivo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "En internet puedo decir lo que quiera sin consecuencias.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las fake news son entretenidas de compartir.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si algo es viral es porque es verdad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No necesito verificar antes de reenviar.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los likes son más importantes que los sentimientos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No me importa etiquetar a alguien en algo humillante.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Hacer cyberbullying no cuenta como bullying real.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Total en redes nadie sabe quién eres realmente.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Copiar trabajos de internet no es plagio.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los profesores no se dan cuenta si copio y pego.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Estudiar es para los que no tienen vida social.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Mis papás no entienden nada de mi vida.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las personas mayores están obsoletas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Nadie de mi familia me comprende realmente.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Prefiero estar en el celular que conversar con mi familia.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los consejos de los adultos no sirven hoy en día.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Mi generación es superior a las anteriores.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los viejos no deberían opinar de tecnología.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La experiencia de otros no me sirve de nada.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Escuchar a mis abuelos es aburrido y anticuado.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No pienso ceder mi asiento a nadie.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Que esperen, yo llegué primero.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Mi tiempo es más valioso que el de los demás.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si llego tarde es problema del que espera.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No tengo por qué saludar a nadie.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Decir por favor y gracias es innecesario.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La cortesía es cosa del pasado.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No me importa interrumpir cuando otros hablan.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Mi opinión es la única que importa aquí.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No necesito escuchar otros puntos de vista.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los que piensan diferente están equivocados.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No hay nada que pueda aprender de esa persona.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Cambiar de opinión es de cobardes.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Admitir errores es mostrar debilidad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Yo nunca me equivoco en nada.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los demás siempre tienen la culpa de todo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No tengo nada de qué disculparme jamás.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Perdonar es para los que no tienen orgullo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Guardar rencor me hace más fuerte.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La venganza es dulce y necesaria.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si me hacen algo malo, respondo peor.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Ojo por ojo es la única justicia real.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No creo en el diálogo para resolver conflictos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los problemas se solucionan con violencia.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Gritar es la mejor forma de que me escuchen.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si no me respetan por las buenas, será por las malas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La empatía es una pérdida de tiempo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No me importan los sentimientos de otros.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Cada uno con sus problemas, yo tengo los míos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No es mi responsabilidad cómo se sienten los demás.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si se ofenden es su problema, no el mío.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La gente exagera todo hoy en día.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Antes las cosas eran mejores, ahora todo es malo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Esta generación está perdida.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Ya nada tiene valor ni sentido.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El futuro va a ser peor que el presente.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No hay esperanza para la humanidad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todo está diseñado para que fracasemos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El sistema está en contra de nosotros.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Nadie puede cambiar nada realmente.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los esfuerzos individuales son insignificantes.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "De qué sirve intentar si todo va a fallar.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La sociedad está condenada al fracaso.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No confío en las vacunas ni en los médicos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La medicina tradicional es un engaño.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los científicos solo quieren nuestro dinero.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todo lo que dice la ciencia puede estar equivocado.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las conspiraciones explican mejor el mundo que los hechos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los medios de comunicación solo mienten.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No hay que creer nada de lo oficial.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Hacer ejercicio es una moda sin sentido.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Comer saludable es aburrido e innecesario.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La salud mental es un invento moderno.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los psicólogos no sirven para nada.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Hablar de emociones es de gente débil.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los problemas se resuelven solos con el tiempo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Pedir apoyo profesional es vergonzoso.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todo el mundo finge estar bien igual.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No hay nada malo en burlarme de los defectos ajenos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si alguien es diferente merece que lo molesten.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Excluir a alguien del grupo es normal.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los rumores hacen la convivencia más entretenida.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Hablar mal de otros a sus espaldas no tiene nada de malo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si me caen mal puedo tratarlos como quiera.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No tengo que ser amable con quien no me agrada.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los apodos ofensivos son solo bromas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si se ríen es porque les gusta, aunque digan que no.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Molestar a otros es diversión inofensiva.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los libros son aburridos y no enseñan nada útil.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Leer es pérdida de tiempo en esta época.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La historia no sirve para nada hoy.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Aprender otros idiomas es innecesario.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La cultura es cosa de gente aburrida.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El arte no tiene ningún valor real.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La música clásica es para viejos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los museos son lugares sin sentido.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El teatro es anticuado y fome.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las tradiciones son obsoletas y sin valor.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Respetar costumbres ajenas es perder identidad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Mi cultura es superior a las demás.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los extranjeros deberían quedarse en su país.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La inmigración solo trae problemas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No quiero trabajar con gente de otros lugares.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los que hablan diferente no merecen respeto.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La diversidad complica las cosas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Mejor que todos sean iguales a mí.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No necesito aprender de otras culturas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las minorías exageran sus problemas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Ya tienen suficientes derechos, no necesitan más.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La igualdad de género es exagerada.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Hay roles que son naturales para cada género.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los hombres no deberían mostrar emociones.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las mujeres son más débiles por naturaleza.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Cada género tiene su lugar en la sociedad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No creo en la igualdad, hay jerarquías naturales.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los privilegios no existen, es cuestión de esfuerzo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si son pobres es por flojos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La desigualdad es natural y necesaria.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No es mi problema que otros no tengan oportunidades.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los beneficios sociales crean gente floja.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Ayudar a los necesitados los hace dependientes.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La caridad es para sentirse superior.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No voy a donar nada a nadie.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El voluntariado es para gente sin vida propia.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Cada quien resuelve sus problemas como puede.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La solidaridad es un concepto romántico sin sentido.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No creo en la cooperación, solo en la competencia.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El éxito es individual, no colectivo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Compartir es perder lo que es tuyo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Competir es mejor que colaborar siempre.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los recursos son limitados, cada uno por su cuenta.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si yo gano, alguien más tiene que perder.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El mundo es de los más fuertes y astutos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La bondad es ingenuidad disfrazada.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Confiar en otros es ser tonto.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todos tienen segundas intenciones.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Nadie hace nada sin esperar algo a cambio.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El altruismo no existe realmente.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las buenas acciones siempre tienen un motivo oculto.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Ser cínico es ser realista.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La esperanza es para ingenuos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Creer en la gente es de ilusos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Al final todos decepcionan.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No hay héroes, solo gente que finge serlo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los actos heroicos son puro show.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Nadie es realmente desinteresado.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todo el mundo es egoísta en el fondo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La hipocresía gobierna el mundo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las promesas están hechas para romperse.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La lealtad es un concepto obsoleto.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los amigos son solo contactos convenientes.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las relaciones son transaccionales.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El amor es solo química sin significado.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La familia es una obligación social.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No le debo nada a mi familia.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los lazos familiares no significan nada.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Mejor estar solo que lidiar con gente.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las personas solo complican la vida.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No necesito a nadie para nada.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Depender de otros es debilidad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La independencia total es lo único que importa.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Pedir ayuda es admitir derrota.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Yo puedo con todo solo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No acepto consejos de nadie.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Mi forma de hacer las cosas es la mejor.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los demás no tienen nada que enseñarme.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Ya lo sé todo sobre esto.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No necesito aprender nada más.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La experiencia ajena no me sirve.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Cada uno aprende solo, sin necesidad de maestros.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los errores ajenos no me enseñan nada.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No me interesa escuchar historias de otros.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las lecciones de vida son pura palabrería.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Cada generación cree que sabe más que la anterior.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La sabiduría popular es solo superstición.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los refranes son frases vacías sin sentido.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las enseñanzas morales son obsoletas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La ética es relativa y sin importancia.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No existen los valores absolutos.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Todo es cuestión de perspectiva, nada es realmente malo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "El bien y el mal son inventos sociales.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las consecuencias no importan si no me afectan.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Solo importa el presente, el futuro ya se verá.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Planificar es perder el tiempo.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Vivir al día es la única forma sensata.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Pensar en consecuencias limita la libertad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las responsabilidades son cadenas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los compromisos son trampas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Mejor no prometer nada a nadie nunca.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La palabra no vale nada hoy en día.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los contratos están para incumplirse.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Las normas sociales son represivas.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La etiqueta social es hipocresía organizada.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Los buenos modales son falsedad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Ser educado es ser falso.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Prefiero ser grosero pero honesto.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "La sinceridad brutal es mejor que la amabilidad.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Si la verdad duele, peor para quien la escucha.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "No voy a endulzar las cosas por nadie.",
+    "valor_social": "negativo"
+  },
+  {
+    "text": "Hoy el cielo está nublado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El bus pasó con cinco minutos de retraso.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Mañana habrá reunión en la oficina.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El experimento terminó a las tres de la tarde.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La tienda abre todos los días a las nueve.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La computadora necesita una actualización.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El agua hierve a cien grados Celsius.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Mi gato duerme casi todo el día.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El tren llega a la estación central.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El correo fue entregado esta mañana.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La temperatura bajó durante la noche.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El supermercado está lleno los domingos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Hoy comienzan las clases en la escuela.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La reunión duró más de una hora.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El parque se encuentra al final de la calle.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La lámpara está encendida desde anoche.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El informe será entregado mañana.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El celular se quedó sin batería.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La película dura dos horas y media.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El avión aterrizó sin problemas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El reloj marca las diez y cuarto.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El museo cierra los lunes.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Mi perro ladra cuando suena el timbre.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El tren salió puntual hoy.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El edificio tiene diez pisos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El café está muy caliente.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El ventilador hace un poco de ruido.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El examen consta de tres partes.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El semáforo cambió a rojo.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La reunión fue en el salón principal.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El agua del río está clara hoy.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El informe fue enviado por correo.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Mi vecino compró un auto nuevo.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La profesora entregó las notas finales.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El celular suena cada vez que llega un mensaje.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El camino estaba cubierto de hojas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El ascensor se detuvo en el tercer piso.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Hoy es martes 5 de septiembre.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El nuevo restaurante está en la esquina.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El libro tiene más de cuatrocientas páginas.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El río pasa por detrás del pueblo.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El auto necesita combustible.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La biblioteca amplió su horario.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El teatro se llenó antes de comenzar la obra.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El reloj dejó de funcionar ayer.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El documento está guardado en la carpeta principal.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El supermercado cambió los precios esta semana.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La ventana está abierta desde la mañana.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El equipo ganó tres partidos seguidos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El clima será variable durante el día.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El tren hace una parada en la siguiente estación.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La lavadora terminó el ciclo de lavado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El semáforo de la esquina no funciona bien.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La radio transmite música en la mañana.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La reunión se realizará por videollamada.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El correo electrónico fue enviado correctamente.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El museo inauguró una nueva exposición.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El tren partió a las ocho en punto.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La empresa publicará los resultados trimestrales.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El aula está recién pintada.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El banco cerrará temprano por mantenimiento.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El médico atiende por orden de llegada.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La película ganó un premio internacional.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El pan está fresco.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El estadio se llenó de aficionados.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El curso comienza el próximo lunes.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El computador se reinició solo.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El bus va directo al centro.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La lámpara de la sala tiene una luz cálida.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El informe mensual está en revisión.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El agua de la piscina está fría.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El centro comercial abre hasta las diez.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El reloj de la pared se atrasó cinco minutos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La comida llegó a tiempo.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El colegio cambió el horario de entrada.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El paquete fue entregado al vecino.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La luz del baño no funciona.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El partido será transmitido por televisión.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La planta creció más de lo esperado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El software requiere una actualización.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El avión despegará en veinte minutos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El teléfono no tiene señal en esta zona.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El cajero automático no entrega efectivo.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El zoológico abrirá el próximo fin de semana.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La carretera está en reparación.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El edificio fue construido en 1980.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El bus se detuvo en la parada equivocada.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El piso está recién lavado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El video tiene buena resolución.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El correo no llegó aún.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El tren pasa cada veinte minutos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El nuevo centro deportivo abrirá en diciembre.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El restaurante ofrece menú vegetariano.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La clase terminó diez minutos antes.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El semáforo cambió a verde.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El teléfono suena sin parar.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El doctor llegará en unos minutos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El mar está tranquilo hoy.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El parque tiene nuevos juegos infantiles.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La mesa está cubierta con un mantel azul.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El estudiante entregó su tarea a tiempo.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El edificio fue renovado el año pasado.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El correo se envió con éxito.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El lago refleja la luz del sol.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El gato se escondió debajo del sofá.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El ventilador no gira bien.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El reloj marca la hora exacta.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "El museo está en el centro histórico.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "La tienda vende productos orgánicos.",
+    "valor_social": "neutral"
+  },
+  {
+    "text": "Ayudar a los demás nos hace mejores personas.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Siempre hay una forma de resolver los problemas con calma.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La paciencia es una gran aliada en los momentos difíciles.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Escuchar a otros es una muestra de respeto.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar el planeta es cuidar nuestro futuro.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cada día es una nueva oportunidad para aprender.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser amable no cuesta nada y cambia mucho.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El trabajo en equipo siempre da mejores resultados.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Dar las gracias abre puertas que el orgullo cierra.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Compartir conocimientos hace crecer a todos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Reconocer los errores es el primer paso para mejorar.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Sonreír puede alegrar el día de alguien más.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El respeto es la base de toda convivencia.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La educación es una herramienta poderosa.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser empático nos acerca más como sociedad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cada pequeño gesto de bondad suma mucho.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Los amigos verdaderos se apoyan siempre.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La honestidad genera confianza y respeto.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Escuchar con atención es una forma de cuidar al otro.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El perdón libera y sana el corazón.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Las palabras amables nunca se olvidan.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar de los animales muestra sensibilidad y amor.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ayudar a un compañero puede marcar la diferencia.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La cooperación hace posible lo imposible.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Celebrar los logros de otros nos hace grandes.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Escuchar sin juzgar mejora cualquier conversación.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser agradecido multiplica lo bueno en la vida.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Aprender de los errores nos fortalece.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Todos tenemos algo valioso que aportar.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Apoyar los sueños ajenos también es un acto de amor.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser amable en redes sociales también cuenta.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Valorar el esfuerzo ajeno crea un entorno más justo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Las palabras sinceras pueden cambiar un mal día.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Donar tiempo a los demás es un regalo inmenso.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Educar en el respeto es sembrar paz.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Los gestos solidarios inspiran esperanza.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La naturaleza nos enseña equilibrio y paciencia.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La diversidad nos enriquece como sociedad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Aprender a escuchar también es un arte.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Reconocer los méritos ajenos no nos hace menos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Una palabra amable puede cambiar el rumbo de un día.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Las buenas acciones no necesitan testigos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Respetar las diferencias construye sociedades más fuertes.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Dar sin esperar nada a cambio es generosidad verdadera.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Agradecer cada día lo bueno nos hace felices.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Las pequeñas acciones pueden generar grandes cambios.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Siempre hay algo nuevo que aprender de los demás.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Apoyar causas justas fortalece la comunidad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar el agua es proteger la vida.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La cooperación es clave para lograr objetivos comunes.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El respeto no se exige, se demuestra.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser amable incluso cuando no es fácil muestra grandeza.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Escuchar antes de responder evita muchos conflictos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Compartir alegría también es una forma de ayudar.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La empatía es el lenguaje universal de la humanidad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Un elogio sincero puede inspirar confianza.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Las diferencias nos complementan, no nos separan.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La justicia empieza en los pequeños actos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar el entorno es cuidar a quienes amamos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La paz se construye día a día con respeto y diálogo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Un buen consejo puede cambiar una vida.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El cambio comienza con uno mismo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser solidario no tiene horario ni condición.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El optimismo contagia esperanza.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ayudar sin que te lo pidan demuestra empatía.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar el lenguaje es cuidar a las personas.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La colaboración genera resultados duraderos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Una sonrisa puede romper barreras.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Compartir tiempo con otros enriquece la vida.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Valorar el esfuerzo es tan importante como valorar el éxito.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Tratar con respeto incluso a quien piensa distinto es madurez.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El amor por la naturaleza se enseña con el ejemplo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ofrecer ayuda es sembrar confianza en la sociedad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser buen ciudadano empieza con pequeños actos de respeto.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La humildad atrae más admiración que el orgullo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Agradecer lo que tenemos nos hace valorar la vida.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Los buenos modales abren más puertas que la fuerza.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar la salud mental es una muestra de amor propio.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Promover el diálogo evita muchos malentendidos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Aprender de los mayores es aprovechar sabiduría viva.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Una comunidad solidaria crece más fuerte.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "La amistad sincera es un refugio en los días difíciles.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser agradecido cambia la perspectiva de la vida.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Dar ejemplo es más poderoso que dar órdenes.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Las acciones positivas se multiplican con el tiempo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Respetar las reglas básicas facilita la convivencia.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cuidar el entorno escolar es tarea de todos.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El respeto digital también es respeto real.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser solidario no requiere riqueza, solo voluntad.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Escuchar a un amigo puede ser el mejor regalo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Practicar la empatía transforma relaciones.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Ser justo empieza por uno mismo.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "Cada palabra amable deja huella en quien la recibe.",
+    "valor_social": "positivo"
+  },
+  {
+    "text": "El respeto mutuo construye paz social.",
+    "valor_social": "positivo"
+  }
+]

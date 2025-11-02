@@ -1,0 +1,62 @@
+[
+  {
+    "text": "¡Me encanta aprender cosas nuevas cada día!",
+    "category": "positivo"
+  },
+  {
+    "text": "El calentamiento global es un problema serio que debemos enfrentar.",
+    "category": "serio"
+  },
+  {
+    "text": "Estoy muy triste porque perdí mi libro favorito.",
+    "category": "negativo"
+  },
+  {
+    "text": "La educación es la herramienta más poderosa para cambiar el mundo.",
+    "category": "inspirador"
+  },
+  {
+    "text": "No creo que esa noticia sea completamente verdadera.",
+    "category": "dudoso"
+  },
+  {
+    "text": "¡Estoy furioso con la injusticia que veo en las noticias!",
+    "category": "enojado"
+  },
+  {
+    "text": "Me da miedo pensar en el futuro del planeta.",
+    "category": "preocupado"
+  },
+  {
+    "text": "Ayudar a los demás nos hace mejores personas.",
+    "category": "positivo"
+  },
+  {
+    "text": "La tecnología puede ser usada para el bien o para el mal.",
+    "category": "neutral"
+  },
+  {
+    "text": "¡Sorpresa! Gané el concurso de ciencias de la escuela.",
+    "category": "sorprendido"
+  },
+  {
+    "text": "El respeto y la tolerancia son fundamentales en la sociedad.",
+    "category": "positivo"
+  },
+  {
+    "text": "Las fake news son un gran problema en internet.",
+    "category": "serio"
+  },
+  {
+    "text": "Amo pasar tiempo con mi familia los fines de semana.",
+    "category": "positivo"
+  },
+  {
+    "text": "La contaminación de los océanos está matando a muchos animales.",
+    "category": "preocupante"
+  },
+  {
+    "text": "Creo que todos podemos hacer una diferencia si nos lo proponemos.",
+    "category": "motivador"
+  }
+]

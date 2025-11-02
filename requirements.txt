@@ -1,0 +1,26 @@
+# Core Framework
+streamlit==1.45.0
+
+# Data Handling and Utilities
+pandas==2.2.2
+python-dotenv==1.1.0
+python-dateutil==2.9.0.post0
+
+# Data Visualization
+altair==5.5.0
+plotly==5.24.1
+
+# Machine Learning & NLP
+accelerate==1.11.0
+datasets==4.3.0
+scikit-learn==1.7.2
+sentencepiece==0.2.1
+torch==2.4.1
+transformers==4.57.1
+
+# NLP - Text Processing & Extraction
+nltk==3.9.1
+yake==0.6.0
+
+# Security & Validation
+bleach==6.1.0

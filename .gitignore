@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Streamlit
+.streamlit/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Modelos pesados
+models/emotion_model/
+models/veracity_model/
+models/social_value_model/
+*.safetensors
+*.pt
+*.bin
+*.pth
+*.h5
+*.ckpt
+
+# Model cache
+models_cache/
+.cache/
+
+# Environment variables
+.env
+
+# Others
+guides/
+sessions/
+presentation/
+setup.bat
