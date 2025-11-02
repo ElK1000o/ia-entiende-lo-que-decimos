@@ -12,7 +12,7 @@ class SocialValueAnalyzer:
     
     def __init__(self):
         """Inicializa la ruta al modelo y lo carga."""
-        self.model_path = "models/social_value_model"
+        self.model_path = "ElK1000o/social-value-model"
         self._load_model()
     
     @st.cache_resource

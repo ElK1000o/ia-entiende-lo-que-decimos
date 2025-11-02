@@ -13,7 +13,7 @@ class EmotionAnalyzer:
     def __init__(self):
         """Inicializa la ruta al modelo y lo carga."""
         # Ruta a la carpeta donde guardamos el modelo afinado
-        self.model_path = "models/emotion_model"
+        self.model_path = "ElK1000o/emotion-model"
         self._load_model()
     
     @st.cache_resource
