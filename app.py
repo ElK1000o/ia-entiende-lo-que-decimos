@@ -10,6 +10,7 @@ from pathlib import Path
 import os
 
 # os.system('pip install -r requirements.txt')
+os.environ["WATCHFILES_DISABLE_GLOBAL_WATCHER"] = "true"
 
 # Configuración de la página
 st.set_page_config(
@@ -104,12 +105,12 @@ with st.sidebar:
             st.error(f"Error al cargar ejemplos: {e}")
     
     # Botón para limpiar base de datos (solo para testing)
-    with st.expander("⚙️ Opciones Avanzadas"):
-        if st.button("🗑️ Limpiar Base de Datos", type="secondary"):
-            if st.checkbox("¿Estás seguro?"):
-                db.clear_database()
-                st.success("Base de datos limpiada")
-                st.rerun()
+    # with st.expander("⚙️ Opciones Avanzadas"):
+    #     if st.button("🗑️ Limpiar Base de Datos", type="secondary"):
+    #         if st.checkbox("¿Estás seguro?"):
+    #             db.clear_database()
+    #             st.success("Base de datos limpiada")
+    #             st.rerun()
 
 # =========================
 # MAIN CONTENT
