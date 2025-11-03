@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Análisis semántico en tiempo real para el aula - Proyecto educativo Universidad Mayor">
+    <title>La IA que entiende lo que decimos | Universidad Mayor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --verde-um: #12636B;
+            --rojo-um: #A4222B;
+            --amarillo-um: #FEDA3F;
+            --gris-um: #3C3C3B;
+            --texto-um: #444242;
+            --blanco: #FFFFFF;
+            --gris-claro: #F5F5F5;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --spacing-xl: 6rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, 'Arial Narrow', sans-serif;
+            color: var(--texto-um);
+            line-height: 1.6;
+            background: var(--blanco);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--verde-um);
+            color: var(--blanco);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus {
+            background: rgba(255, 255, 255, 0.2);
+            outline: 2px solid var(--amarillo-um);
+            outline-offset: 2px;
+        }
+
+        /* Hero */
+        .hero {
+            margin-top: 80px;
+            background: linear-gradient(135deg, var(--verde-um) 0%, #0a4a51 100%);
+            color: var(--blanco);
+            padding: var(--spacing-xl) var(--spacing-sm);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero .description {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: var(--rojo-um);
+            color: var(--blanco);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--rojo-um);
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background: #8a1a22;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(164, 34, 43, 0.3);
+            outline: 2px solid var(--amarillo-um);
+            outline-offset: 2px;
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .color-box {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Sections */
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-lg) var(--spacing-sm);
+        }
+
+        section h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--verde-um);
+            margin-bottom: var(--spacing-md);
+            text-align: center;
+        }
+
+        section h3 {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            color: var(--gris-um);
+            margin: var(--spacing-md) 0 var(--spacing-sm);
+        }
+
+        /* Grid Cards */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .card {
+            background: var(--blanco);
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: var(--spacing-md);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            border-color: var(--verde-um);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            color: var(--verde-um);
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--amarillo-um);
+            color: var(--gris-um);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        /* Metrics */
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+        }
+
+        .metric-box {
+            background: var(--gris-claro);
+            padding: var(--spacing-md);
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid var(--rojo-um);
+        }
+
+        .metric-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--verde-um);
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 1rem;
+            color: var(--gris-um);
+            margin-top: 0.5rem;
+        }
+
+        /* Steps */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-sm);
+            margin: var(--spacing-md) 0;
+        }
+
+        .step {
+            text-align: center;
+            padding: var(--spacing-md);
+            position: relative;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--rojo-um);
+            color: var(--blanco);
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .step::after {
+            content: '→';
+            position: absolute;
+            right: -1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: var(--verde-um);
+        }
+
+        .step:last-child::after {
+            content: '';
+        }
+
+        /* Architecture */
+        .architecture {
+            background: var(--gris-claro);
+            padding: var(--spacing-md);
+            border-radius: 12px;
+            border-left: 4px solid var(--verde-um);
+        }
+
+        .architecture pre {
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            padding: 1rem;
+            background: var(--blanco);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: var(--gris-claro);
+            border-radius: 8px;
+            border-left: 4px solid var(--verde-um);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .checklist li::before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background: var(--verde-um);
+            color: var(--blanco);
+            border-radius: 50%;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* Screenshot Placeholder */
+        .screenshot {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gris-um);
+            font-size: 1.2rem;
+            margin: var(--spacing-md) 0;
+            border: 2px dashed #ccc;
+        }
+
+        /* FAQ */
+        .faq {
+            margin: var(--spacing-md) 0;
+        }
+
+        .faq-item {
+            background: var(--gris-claro);
+            padding: var(--spacing-md);
+            margin: 1rem 0;
+            border-radius: 8px;
+            border-left: 4px solid var(--amarillo-um);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--verde-um);
+            margin-bottom: 0.5rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--verde-um) 0%, #0a4a51 100%);
+            color: var(--blanco);
+            padding: var(--spacing-xl) var(--spacing-sm);
+            text-align: center;
+            border-radius: 12px;
+            margin: var(--spacing-lg) 0;
+        }
+
+        .cta-section h2 {
+            color: var(--blanco);
+        }
+
+        .qr-placeholder {
+            width: 200px;
+            height: 200px;
+            background: var(--blanco);
+            margin: var(--spacing-md) auto;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gris-um);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--gris-um);
+            color: var(--blanco);
+            padding: var(--spacing-md) var(--spacing-sm);
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--amarillo-um);
+            text-decoration: none;
+        }
+
+        footer a:hover,
+        footer a:focus {
+            text-decoration: underline;
+            outline: 2px solid var(--amarillo-um);
+            outline-offset: 2px;
+        }
+
+        /* Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--rojo-um);
+            color: var(--blanco);
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        :focus {
+            outline: 2px solid var(--amarillo-um);
+            outline-offset: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                justify-content: center;
+            }
+
+            .step::after {
+                content: '↓';
+                position: static;
+                display: block;
+                margin: 1rem 0;
+            }
+
+            .step:last-child::after {
+                content: '';
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1a1a1a;
+                color: #e0e0e0;
+            }
+
+            .card,
+            .screenshot {
+                background: #2a2a2a;
+                border-color: #444;
+            }
+
+            .metric-box,
+            .architecture,
+            .checklist li,
+            .faq-item {
+                background: #2a2a2a;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="banner">
+        <nav aria-label="Navegación principal">
+            <div class="logo">Universidad Mayor</div>
+            <ul class="nav-links">
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucion">Solución</a></li>
+                <li><a href="#como-funciona">Cómo Funciona</a></li>
+                <li><a href="#metricas">Métricas</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">La IA que entiende lo que decimos</h1>
+            <p class="subtitle">Análisis semántico en tiempo real para el aula</p>
+            <p class="description">
+                Analiza tus frases y descubre emoción, veracidad y valor social en segundos.
+                Una herramienta educativa que promueve la alfabetización digital y el pensamiento crítico.
+            </p>
+            <a href="#demo" class="btn-primary">Pruébala ahora</a>
+
+            <div class="color-palette" role="img" aria-label="Paleta de colores Universidad Mayor">
+                <div class="color-box" style="background: #12636B;" title="Verde UM"></div>
+                <div class="color-box" style="background: #A4222B;" title="Rojo UM"></div>
+                <div class="color-box" style="background: #FEDA3F;" title="Amarillo UM"></div>
+                <div class="color-box" style="background: #3C3C3B;" title="Gris UM"></div>
+            </div>
+        </section>
+
+        <!-- El Problema -->
+        <section id="problema" aria-labelledby="problema-title">
+            <h2 id="problema-title">El Problema</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#A4222B" stroke-width="2">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                        <line x1="12" y1="9" x2="12" y2="13" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    <h3>Comunicación Digital Compleja</h3>
+                    <p>Los mensajes digitales influyen profundamente en la convivencia escolar, pero su interpretación
+                        es cada vez más desafiante.</p>
+                </div>
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#12636B" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    <h3>Falta de Herramientas</h3>
+                    <p>Docentes y estudiantes carecen de recursos para analizar objetivamente el contenido emocional y
+                        veracidad de los textos.</p>
+                </div>
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#A4222B" stroke-width="2">
+                        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                    </svg>
+                    <h3>Impacto en el Aula</h3>
+                    <p>La desinformación y malentendidos afectan la calidad del diálogo educativo y la construcción de
+                        conocimiento colaborativo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestra Solución -->
+        <section id="solucion" aria-labelledby="solucion-title">
+            <h2 id="solucion-title">Nuestra Solución</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto var(--spacing-md);">
+                Una aplicación web desarrollada con Streamlit que utiliza modelos de lenguaje transformer
+                para analizar texto en cuatro dimensiones fundamentales:
+            </p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#FEDA3F" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                        <line x1="9" y1="9" x2="9.01" y2="9" />
+                        <line x1="15" y1="9" x2="15.01" y2="9" />
+                    </svg>
+                    <h3>Análisis Emocional</h3>
+                    <p>Detecta 7 emociones básicas: alegría, tristeza, enojo, miedo, sorpresa, disgusto y neutralidad.
+                    </p>
+                    <span class="tag">67% precisión</span>
+                </div>
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#12636B" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <h3>Veracidad</h3>
+                    <p>Evalúa si el contenido es verdadero, falso o mixto, promoviendo el pensamiento crítico.</p>
+                    <span class="tag">45.5% precisión</span>
+                </div>
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#A4222B" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 00-3-3.87" />
+                        <path d="M16 3.13a4 4 0 010 7.75" />
+                    </svg>
+                    <h3>Valor Social</h3>
+                    <p>Clasifica mensajes como positivos, negativos o neutros según su impacto en la convivencia.</p>
+                    <span class="tag">94% precisión</span>
+                </div>
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#12636B" stroke-width="2">
+                        <path
+                            d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                        <line x1="12" y1="22.08" x2="12" y2="12" />
+                    </svg>
+                    <h3>Palabras Clave</h3>
+                    <p>Extrae automáticamente los conceptos más relevantes usando el algoritmo YAKE.</p>
+                    <span class="tag">Automático</span>
+                </div>
+            </div>
+
+            <div
+                style="margin-top: var(--spacing-md); padding: var(--spacing-md); background: var(--gris-claro); border-radius: 12px; border-left: 4px solid var(--verde-um);">
+                <h3>Características Destacadas</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0;">✓ <strong>Predicciones claras:</strong> resultados interpretables y
+                        visuales</li>
+                    <li style="padding: 0.5rem 0;">✓ <strong>Gráficos en vivo:</strong> distribuciones de probabilidad
+                        en tiempo real</li>
+                    <li style="padding: 0.5rem 0;">✓ <strong>Historial con búsqueda:</strong> seguimiento de todos los
+                        análisis realizados</li>
+                    <li style="padding: 0.5rem 0;">✓ <strong>Palabras clave automáticas:</strong> extracción sin
+                        supervisión</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Cómo Funciona -->
+        <section id="como-funciona" aria-labelledby="como-funciona-title">
+            <h2 id="como-funciona-title">Cómo Funciona</h2>
+            <p style="text-align: center; margin-bottom: var(--spacing-md);">
+                Proceso simple en cuatro pasos:
+            </p>
+
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number" aria-label="Paso 1">1</span>
+                    <h3>Escribe</h3>
+                    <p>Ingresa tu texto o frase en el campo de entrada</p>
+                </div>
+                <div class="step">
+                    <span class="step-number" aria-label="Paso 2">2</span>
+                    <h3>Analiza</h3>
+                    <p>Los modelos procesan el contenido en milisegundos</p>
+                </div>
+                <div class="step">
+                    <span class="step-number" aria-label="Paso 3">3</span>
+                    <h3>Visualiza</h3>
+                    <p>Observa gráficos y métricas de cada dimensión</p>
+                </div>
+                <div class="step">
+                    <span class="step-number" aria-label="Paso 4">4</span>
+                    <h3>Reflexiona</h3>
+                    <p>Discute resultados y desarrolla pensamiento crítico</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: var(--spacing-lg);">Arquitectura Técnica</h3>
+            <div class="architecture">
+                <pre>
+    proyecto/
+    ├── app.py                 # Aplicación principal Streamlit
+    ├── models/
+    │   ├── emotion/          # Modelo fine-tuned para emociones
+    │   ├── veracity/         # Modelo fine-tuned para veracidad
+    │   └── social_value/     # Modelo fine-tuned para valor social
+    ├── ui/
+    │   ├── components.py     # Componentes reutilizables
+    │   └── visualizations.py # Gráficos y charts
+    ├── data/
+    │   ├── database.db       # SQLite para historial
+    │   └── cache/            # Cache de predicciones
+    ├── utils/
+    │   ├── text_processor.py # Sanitización y preprocesamiento
+    │   ├── keywords.py       # Extracción YAKE
+    │   └── security.py       # Validaciones y límites
+    └── requirements.txt      # Dependencias
+                </pre>
+            </div>
+
+            <h3>Stack Tecnológico</h3>
+            <ul class="checklist">
+                <li><strong>Streamlit:</strong> Framework web para prototipado rápido</li>
+                <li><strong>Transformers (Hugging Face):</strong> Modelos BERT multilingües</li>
+                <li><strong>YAKE:</strong> Extracción no supervisada de keywords</li>
+                <li><strong>SQLite:</strong> Base de datos local para historial</li>
+                <li><strong>Plotly:</strong> Visualizaciones interactivas</li>
+            </ul>
+        </section>
+
+        <!-- Fine-Tuning -->
+        <section id="finetuning" aria-labelledby="finetuning-title">
+            <h2 id="finetuning-title">De Zero-Shot a Fine-Tuning</h2>
+
+            <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin: var(--spacing-md) 0;">
+                <div class="card">
+                    <h3>Zero-Shot (Inicial)</h3>
+                    <p>Los modelos preentrenados ofrecían predicciones genéricas con baja precisión en contextos
+                        educativos chilenos.</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>Sin datos específicos</li>
+                        <li>Métricas base: ~40-50%</li>
+                        <li>Limitado a español formal</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Fine-Tuning (Actual)</h3>
+                    <p>Ajuste fino con datos educativos reales mejoró significativamente la precisión y relevancia
+                        contextual.</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>Dataset de conversaciones escolares</li>
+                        <li>Métricas mejoradas: hasta 94%</li>
+                        <li>Adaptado a coloquialismos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="background: var(--gris-claro); padding: var(--spacing-md); border-radius: 12px; margin-top: var(--spacing-md);">
+                <h3>Proceso de Mejora</h3>
+                <ol style="padding-left: 1.5rem;">
+                    <li><strong>Recolección:</strong> Corpus de mensajes educativos anonimizados</li>
+                    <li><strong>Etiquetado:</strong> Clasificación manual por expertos en educación</li>
+                    <li><strong>Entrenamiento:</strong> Fine-tuning de modelos BERT con hiperparámetros optimizados</li>
+                    <li><strong>Validación:</strong> Evaluación con métricas estándar (F1, precisión, recall)</li>
+                    <li><strong>Iteración:</strong> Ajustes continuos basados en feedback de usuarios</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Métricas y Resultados -->
+        <section id="metricas" aria-labelledby="metricas-title">
+            <h2 id="metricas-title">Modelos y Métricas</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto var(--spacing-md);">
+                Resultados reales y transparentes. Entendemos los límites y promovemos el pensamiento crítico.
+            </p>
+
+            <div class="metrics">
+                <div class="metric-box">
+                    <span class="metric-value">67%</span>
+                    <span class="metric-label">Precisión Emocional<br>(7 clases)</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value">94%</span>
+                    <span class="metric-label">Precisión Valor Social<br>(3 clases)</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value">45.5%</span>
+                    <span class="metric-label">Precisión Veracidad<br>(3 clases)</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value">100%</span>
+                    <span class="metric-label">Keywords Automáticas<br>(YAKE)</span>
+                </div>
+            </div>
+
+            <div style="margin-top: var(--spacing-md);">
+                <h3>Interpretación de Resultados</h3>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3 style="color: var(--verde-um); margin-top: 0;">Emoción (67%)</h3>
+                        <p>Buena precisión para emociones claras. Desafíos en contextos ambiguos o sarcásticos.</p>
+                        <small style="color: var(--gris-um);">F1-Score: 0.65 | Recall: 0.68</small>
+                    </div>
+                    <div class="card">
+                        <h3 style="color: var(--verde-um); margin-top: 0;">Valor Social (94%)</h3>
+                        <p>Excelente desempeño. Alta confiabilidad para identificar contenido constructivo vs.
+                            destructivo.</p>
+                        <small style="color: var(--gris-um);">F1-Score: 0.93 | Recall: 0.95</small>
+                    </div>
+                    <div class="card">
+                        <h3 style="color: var(--verde-um); margin-top: 0;">Veracidad (45.5%)</h3>
+                        <p>Métrica más desafiante. Requiere contexto externo. Útil como indicador inicial, no verdad
+                            absoluta.</p>
+                        <small style="color: var(--gris-um);">F1-Score: 0.42 | Recall: 0.47</small>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="background: #fff3cd; padding: var(--spacing-md); border-radius: 12px; border-left: 4px solid var(--amarillo-um); margin-top: var(--spacing-md);">
+                <h3 style="color: var(--gris-um); margin-top: 0;">⚠️ Transparencia y Limitaciones</h3>
+                <p>Esta herramienta es un <strong>apoyo educativo</strong>, no un juez absoluto. Los modelos de IA
+                    pueden:</p>
+                <ul>
+                    <li>Tener sesgos de los datos de entrenamiento</li>
+                    <li>Fallar en contextos culturales específicos</li>
+                    <li>No captar ironía, sarcasmo o humor complejo</li>
+                    <li>Requerir interpretación humana informada</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Usamos estas limitaciones como oportunidades pedagógicas</strong>
+                    para discutir sesgos algorítmicos y alfabetización en IA.</p>
+            </div>
+        </section>
+
+        <!-- Demo Guiada -->
+        <section id="demo" aria-labelledby="demo-title">
+            <!-- <h2 id="demo-title">Demo Guiada</h2>
+
+            <div class="screenshot">
+                <div style="text-align: center;">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#12636B" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                        <line x1="8" y1="21" x2="16" y2="21" />
+                        <line x1="12" y1="17" x2="12" y2="21" />
+                    </svg>
+                    <p style="margin-top: 1rem; color: var(--gris-um);">Captura: Interfaz Principal</p>
+                </div>
+            </div> -->
+
+            <h3>Flujo de Usuario</h3>
+            <ol style="padding-left: 1.5rem; line-height: 2;">
+                <li><strong>Entrada de texto:</strong> Campo de texto amplio con contador de caracteres (máx. 500)</li>
+                <li><strong>Análisis automático:</strong> Click en "Analizar" activa todos los modelos simultáneamente
+                </li>
+                <li><strong>Resultados visuales:</strong>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Gráficos de barras para distribución de emociones</li>
+                        <li>Indicadores de confianza para veracidad</li>
+                        <li>Medidor visual de valor social</li>
+                        <li>Nube o lista de palabras clave</li>
+                    </ul>
+                </li>
+                <li><strong>Historial:</strong> Tabla interactiva con búsqueda y filtros por fecha/tipo</li>
+                <li><strong>Exportación:</strong> Descarga de resultados en CSV para análisis posterior</li>
+            </ol>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                <div class="screenshot" style="height: 200px;">
+                    <div style="text-align: center;">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#A4222B" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10" />
+                            <line x1="12" y1="20" x2="12" y2="4" />
+                            <line x1="6" y1="20" x2="6" y2="14" />
+                        </svg>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Gráficos de Predicción</p>
+                    </div>
+                </div>
+                <div class="screenshot" style="height: 200px;">
+                    <div style="text-align: center;">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#12636B" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                        </svg>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Vista de Historial</p>
+                    </div>
+                </div>
+                <div class="screenshot" style="height: 200px;">
+                    <div style="text-align: center;">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#FEDA3F" stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                        </svg>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Búsqueda de Keywords</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seguridad -->
+        <section id="seguridad" aria-labelledby="seguridad-title">
+            <h2 id="seguridad-title">Seguridad y Privacidad</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto var(--spacing-md);">
+                Entradas saneadas, límites y consultas seguras: hechos para el aula.
+            </p>
+
+            <ul class="checklist">
+                <li><strong>Sanitización de entradas:</strong> Prevención de XSS mediante limpieza de HTML/JS malicioso
+                </li>
+                <li><strong>Protección SQL Injection:</strong> Uso de consultas parametrizadas en SQLite</li>
+                <li><strong>Límites de caracteres:</strong> Máximo 500 caracteres por análisis para prevenir abuso</li>
+                <li><strong>Rate limiting:</strong> Límite de 30 análisis por minuto por usuario</li>
+                <li><strong>Validación de tipos:</strong> Verificación estricta de inputs antes de procesamiento</li>
+                <li><strong>No almacenamiento de IPs:</strong> Privacidad total, solo se guarda texto analizado</li>
+                <li><strong>Logs mínimos:</strong> Solo errores críticos, sin tracking de usuarios</li>
+                <li><strong>Encriptación opcional:</strong> Posibilidad de hash en historial para anonimización</li>
+            </ul>
+
+            <div
+                style="background: var(--gris-claro); padding: var(--spacing-md); border-radius: 12px; margin-top: var(--spacing-md); border-left: 4px solid var(--verde-um);">
+                <h3>Código de Ejemplo: Sanitización</h3>
+                <pre
+                    style="background: var(--blanco); padding: 1rem; border-radius: 8px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 0.9rem;">
+import re
+from html import escape
+
+def sanitize_input(text: str, max_length: int = 500) -> str:
+    """Limpia y valida entrada de usuario"""
+    # Limitar longitud
+    text = text[:max_length]
+    
+    # Escapar HTML
+    text = escape(text)
+    
+    # Remover caracteres especiales peligrosos
+    text = re.sub(r'[<>{}]', '', text)
+    
+    # Normalizar espacios
+    text = ' '.join(text.split())
+    
+    return text.strip()
+                </pre>
+            </div>
+        </section>
+
+        <!-- Rendimiento -->
+        <section id="rendimiento" aria-labelledby="rendimiento-title">
+            <h2 id="rendimiento-title">Rendimiento y Optimización</h2>
+
+            <div class="metrics">
+                <div class="metric-box">
+                    <span class="metric-value">~2s</span>
+                    <span class="metric-label">Tiempo de Análisis<br>(promedio)</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value">CPU</span>
+                    <span class="metric-label">Solo CPU<br>(sin GPU requerida)</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value">~300MB</span>
+                    <span class="metric-label">Memoria RAM<br>(modelos cargados)</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value">99.2%</span>
+                    <span class="metric-label">Uptime<br>(últimos 30 días)</span>
+                </div>
+            </div>
+
+            <h3 style="margin-top: var(--spacing-md);">Estrategias de Optimización</h3>
+            <ul class="checklist">
+                <li><strong>Cache de modelos:</strong> Carga única al inicio, reutilización en memoria</li>
+                <li><strong>Batch processing:</strong> Procesamiento por lotes para múltiples análisis</li>
+                <li><strong>Lazy loading:</strong> Carga diferida de componentes visuales pesados</li>
+                <li><strong>Índices en DB:</strong> Consultas optimizadas con índices en timestamp y keywords</li>
+                <li><strong>Compresión de gráficos:</strong> Reducción de payload en visualizaciones</li>
+                <li><strong>Streamlit caching:</strong> Uso de @st.cache_data para funciones costosas</li>
+            </ul>
+
+            <div
+                style="background: var(--gris-claro); padding: var(--spacing-md); border-radius: 12px; margin-top: var(--spacing-md);">
+                <h3>Indicadores de Performance</h3>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; color: var(--verde-um); font-weight: 700;">⚡</div>
+                        <p><strong>Carga inicial:</strong> menor a 3s</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; color: var(--verde-um); font-weight: 700;">📊</div>
+                        <p><strong>Renderizado:</strong> 60fps</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; color: var(--verde-um); font-weight: 700;">💾</div>
+                        <p><strong>DB queries:</strong> menor a 100ms</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estado y Roadmap -->
+        <section id="roadmap" aria-labelledby="roadmap-title">
+            <h2 id="roadmap-title">Estado Actual y Roadmap</h2>
+
+            <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin: var(--spacing-md) 0;">
+                <div class="card" style="background: #d4edda; border-color: var(--verde-um);">
+                    <h3 style="color: var(--verde-um); margin-top: 0;">✅ Completado (v1.0)</h3>
+                    <ul style="padding-left: 1.5rem;">
+                        <li>Análisis de 4 dimensiones funcional</li>
+                        <li>Interfaz Streamlit responsiva</li>
+                        <li>Historial con búsqueda</li>
+                        <li>Exportación de datos</li>
+                        <li>Fine-tuning de modelos base</li>
+                        <li>Seguridad y sanitización</li>
+                        <li>Documentación completa</li>
+                    </ul>
+                </div>
+                <div class="card" style="background: #fff3cd; border-color: var(--amarillo-um);">
+                    <h3 style="color: var(--gris-um); margin-top: 0;">🚧 En Desarrollo (v1.1)</h3>
+                    <ul style="padding-left: 1.5rem;">
+                        <li>Detección de sarcasmo</li>
+                        <li>Análisis de coloquialismos chilenos</li>
+                        <li>Modo comparativo (2 textos)</li>
+                        <!-- <li>API REST para integración</li> -->
+                        <li>Dashboard de métricas agregadas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Próximas Mejoras (v2.0+)</h3>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3 style="color: var(--rojo-um); margin-top: 0;">Análisis Multimodal</h3>
+                    <p>Incorporar análisis de imágenes y emojis junto al texto</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--rojo-um); margin-top: 0;">Detección de Toxicidad</h3>
+                    <p>Clasificador específico para contenido dañino o acoso</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--rojo-um); margin-top: 0;">Análisis de Conversaciones</h3>
+                    <p>Procesar hilos completos y detectar dinámicas grupales</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--rojo-um); margin-top: 0;">Explicabilidad (XAI)</h3>
+                    <p>Mostrar qué palabras/frases influyen en cada predicción</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impacto Pedagógico -->
+        <section id="impacto" aria-labelledby="impacto-title">
+            <h2 id="impacto-title">Impacto Pedagógico</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto var(--spacing-md);">
+                Más que una herramienta técnica, es un recurso para transformar el aula en un espacio de reflexión
+                crítica.
+            </p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#12636B" stroke-width="2">
+                        <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+                        <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+                    </svg>
+                    <h3>Alfabetización Digital</h3>
+                    <p>Los estudiantes aprenden a evaluar críticamente contenido digital, reconociendo sesgos y
+                        manipulación.</p>
+                </div>
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#A4222B" stroke-width="2">
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                            d="M12 1v6m0 6v6m8.66-10.66l-5.2 3m-2.92 1.73l-5.2 3M20 20l-5.2-3m-2.92-1.73L6.68 12M3.34 6.34l5.2 3m2.92 1.73l5.2 3" />
+                    </svg>
+                    <h3>Pensamiento Crítico</h3>
+                    <p>Fomenta el cuestionamiento: ¿por qué la IA clasificó así? ¿Estoy de acuerdo? ¿Qué sesgos existen?
+                    </p>
+                </div>
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#12636B" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75" />
+                    </svg>
+                    <h3>Convivencia Escolar</h3>
+                    <p>Herramienta para mediar conflictos, analizar comunicación y promover empatía en interacciones
+                        digitales.</p>
+                </div>
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="#FEDA3F" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    <h3>Competencias del S.XXI</h3>
+                    <p>Desarrolla habilidades de análisis de datos, interpretación de IA y ética tecnológica.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: var(--spacing-lg);">Casos de Uso en el Aula</h3>
+            <div style="background: var(--gris-claro); padding: var(--spacing-md); border-radius: 12px;">
+                <ol style="padding-left: 1.5rem; line-height: 2;">
+                    <li><strong>Análisis de noticias:</strong> Comparar titulares de diferentes medios y discutir sesgos
+                    </li>
+                    <li><strong>Debate ético:</strong> ¿Puede la IA determinar la verdad? Límites de la automatización
+                    </li>
+                    <li><strong>Taller de escritura:</strong> Revisar borradores y analizar tono/emoción antes de
+                        publicar</li>
+                    <li><strong>Ciudadanía digital:</strong> Entender cómo algoritmos influyen en redes sociales</li>
+                    <li><strong>Proyecto de investigación:</strong> Analizar corpus de mensajes históricos (ej:
+                        discursos políticos)</li>
+                </ol>
+            </div>
+
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" aria-labelledby="faq-title">
+            <h2 id="faq-title">Preguntas Frecuentes</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuánto tarda en analizar un texto?</div>
+                    <div class="faq-answer">Entre 1.5 y 3 segundos en promedio, dependiendo de la longitud del texto y
+                        la carga del servidor. El análisis es prácticamente instantáneo para frases cortas.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Se necesita conexión a internet?</div>
+                    <div class="faq-answer">Sí, la aplicación web requiere conexión. Los modelos se ejecutan en el
+                        servidor, no localmente. Esto permite usar la herramienta desde cualquier dispositivo sin
+                        instalar software.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Qué pasa con mis datos? ¿Son privados?</div>
+                    <div class="faq-answer">Los textos analizados se almacenan localmente en el servidor solo para
+                        generar el historial personal. No compartimos datos con terceros, no usamos IPs, y puedes
+                        solicitar eliminación de tu historial en cualquier momento.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Por qué la veracidad tiene menor precisión?</div>
+                    <div class="faq-answer">La verificación de hechos es extremadamente compleja y requiere conocimiento
+                        del mundo externo. Nuestra métrica es un indicador inicial, no una verdad absoluta. Siempre
+                        recomendamos verificación humana y fuentes confiables.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Funciona con otros idiomas además del español?</div>
+                    <div class="faq-answer">Actualmente está optimizado para español, específicamente chileno. Los
+                        modelos pueden analizar inglés u otros idiomas, pero la precisión será significativamente menor.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Puedo integrar esta herramienta en mi plataforma educativa?</div>
+                    <div class="faq-answer">Sí. Estamos desarrollando una API REST (v1.1) que permitirá integración con
+                        LMS como Moodle, Canvas, o aplicaciones personalizadas. Contacta con nosotros para acceso
+                        anticipado.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <!-- <section class="cta-section" aria-labelledby="cta-title">
+            <h2 id="cta-title">¡Pruébala Ahora!</h2>
+            <p style="font-size: 1.2rem; margin-bottom: var(--spacing-md);">
+                Experimenta el análisis semántico en tiempo real y descubre cómo la IA puede transformar tu aula.
+            </p>
+
+            <div
+                style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap; margin-bottom: var(--spacing-md);">
+                <a href="https://demo.umayor.cl/ia-semantica" class="btn-primary"
+                    style="background: var(--amarillo-um); color: var(--gris-um);">
+                    🚀 Probar Demo
+                </a>
+                <a href="https://github.com/umayor/ia-semantica" class="btn-primary"
+                    style="background: transparent; border: 2px solid var(--blanco); color: var(--blanco);">
+                    📁 Ver Repositorio
+                </a>
+            </div>
+
+            <div class="qr-placeholder">
+                <div style="text-align: center;">
+                    <svg width="150" height="150" viewBox="0 0 100 100" fill="#000">
+                        <rect width="100" height="100" fill="#fff" />
+                        <rect x="10" y="10" width="15" height="15" />
+                        <rect x="30" y="10" width="5" height="5" />
+                        <rect x="40" y="10" width="10" height="5" />
+                        <rect x="55" y="10" width="5" height="5" />
+                        <rect x="65" y="10" width="5" height="10" />
+                        <rect x="75" y="10" width="15" height="15" />
+                        <rect x="10" y="30" width="5" height="5" />
+                        <rect x="20" y="30" width="5" height="5" />
+                        <rect x="30" y="30" width="15" height="5" />
+                        <rect x="50" y="30" width="5" height="10" />
+                        <rect x="60" y="30" width="10" height="5" />
+                        <rect x="75" y="30" width="5" height="5" />
+                        <rect x="85" y="30" width="5" height="5" />
+                        <rect x="10" y="40" width="5" height="10" />
+                        <rect x="20" y="40" width="5" height="5" />
+                        <rect x="30" y="45" width="5" height="5" />
+                        <rect x="40" y="40" width="15" height="5" />
+                        <rect x="60" y="40" width="5" height="10" />
+                        <rect x="75" y="40" width="5" height="10" />
+                        <rect x="85" y="45" width="5" height="5" />
+                        <rect x="10" y="55" width="10" height="5" />
+                        <rect x="25" y="55" width="5" height="10" />
+                        <rect x="35" y="55" width="5" height="5" />
+                        <rect x="45" y="55" width="10" height="5" />
+                        <rect x="60" y="55" width="5" height="5" />
+                        <rect x="70" y="55" width="5" height="10" />
+                        <rect x="80" y="55" width="10" height="5" />
+                        <rect x="10" y="65" width="5" height="10" />
+                        <rect x="20" y="70" width="10" height="5" />
+                        <rect x="35" y="65" width="5" height="10" />
+                        <rect x="45" y="65" width="5" height="5" />
+                        <rect x="55" y="70" width="10" height="5" />
+                        <rect x="75" y="65" width="5" height="5" />
+                        <rect x="85" y="70" width="5" height="5" />
+                        <rect x="10" y="75" width="15" height="15" />
+                        <rect x="30" y="80" width="5" height="10" />
+                        <rect x="40" y="75" width="10" height="5" />
+                        <rect x="55" y="80" width="10" height="10" />
+                        <rect x="70" y="75" width="5" height="5" />
+                        <rect x="75" y="75" width="15" height="15" />
+                    </svg>
+                    <p style="margin-top: 1rem; color: var(--gris-um);">Escanea para acceder</p>
+                </div>
+            </div>
+
+            <p style="font-size: 1rem; margin-top: var(--spacing-md);">
+                <strong>URL Demo:</strong> <a href="https://ia-entiende-lo-que-decimos.streamlit.app/"
+                    style="color: var(--amarillo-um); text-decoration: underline;">demo.umayor.cl/ia-semantica</a><br>
+                <strong>Repositorio:</strong> <a href="https://www.github.com/ElK1000o/ia-entiende-lo-que-decimos"
+                    style="color: var(--amarillo-um); text-decoration: underline;">github.com/umayor/ia-semantica</a>
+            </p>
+
+        </section> -->
+    </main>
+
+    <footer role="contentinfo">
+        <div style="max-width: 1200px; margin: 0 auto; padding: var(--spacing-md);">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-md); margin-bottom: var(--spacing-md);">
+                <div>
+                    <h3 style="color: var(--amarillo-um); margin-bottom: 1rem;">Sobre el Proyecto</h3>
+                    <p style="line-height: 1.8;">
+                        "La IA que entiende lo que decimos" es una iniciativa de la Universidad Mayor
+                        para promover la alfabetización digital y el pensamiento crítico en educación.
+                    </p>
+                </div>
+                <div>
+                    <h3 style="color: var(--amarillo-um); margin-bottom: 1rem;">Enlaces Útiles</h3>
+                    <ul style="list-style: none; padding: 0; line-height: 2;">
+                        <li><a href="https://www.umayor.cl" style="color: var(--blanco);">Universidad Mayor</a></li>
+                        <li><a href="https://www.github.com/ElK1000o/ia-entiende-lo-que-decimos"
+                                style="color: var(--blanco);">Documentación</a></li>
+                        <li><a href="https://www.github.com/ElK1000o" style="color: var(--blanco);">GitHub</a>
+                        </li>
+                        <li><a href="mailto:camilo.riquelme01@mayor.cl" style="color: var(--blanco);">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: var(--amarillo-um); margin-bottom: 1rem;">Tecnologías</h3>
+                    <ul style="list-style: none; padding: 0; line-height: 2;">
+                        <li>🔹 Streamlit</li>
+                        <li>🔹 Transformers (Hugging Face)</li>
+                        <li>🔹 YAKE</li>
+                        <li>🔹 SQLite</li>
+                        <li>🔹 Plotly</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.2); margin: var(--spacing-md) 0;">
+
+            <!-- <div
+                style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="margin: 0;">
+                    © 2024 Universidad Mayor. Todos los derechos reservados.
+                </p>
+                <p style="margin: 0;">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: var(--amarillo-um);">
+                        Licencia CC BY-NC-SA 4.0
+                    </a>
+                </p>
+            </div> -->
+
+            <!-- <p style="text-align: center; margin-top: var(--spacing-md); font-size: 0.9rem; opacity: 0.8;">
+                Desarrollado con ❤️ para la comunidad educativa |
+                <a href="#" style="color: var(--amarillo-um);">Política de Privacidad</a> |
+                <a href="#" style="color: var(--amarillo-um);">Términos de Uso</a>
+            </p> -->
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll para enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Indicador de sección activa en navegación
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        function setActiveLink() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.background = '';
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.style.background = 'rgba(255,255,255,0.2)';
+                }
+            });
+        }
+
+        // Throttle para mejor rendimiento
+        let throttleTimer;
+        const throttle = (callback, time) => {
+            if (throttleTimer) return;
+            throttleTimer = true;
+            setTimeout(() => {
+                callback();
+                throttleTimer = false;
+            }, time);
+        };
+
+        window.addEventListener('scroll', () => {
+            throttle(setActiveLink, 100);
+        });
+
+        // Animaciones al hacer scroll (con respeto a prefers-reduced-motion)
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReducedMotion) {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Aplicar animación a las tarjetas
+            document.querySelectorAll('.card, .metric-box, .step').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        }
+
+        // Contador animado para métricas
+        function animateValue(element, start, end, duration) {
+            if (prefersReducedMotion) {
+                element.textContent = end;
+                return;
+            }
+
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+
+                if (end.toString().includes('%')) {
+                    const value = Math.floor(progress * parseFloat(end));
+                    element.textContent = value + '%';
+                } else {
+                    element.textContent = end;
+                }
+
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Observar métricas para animar cuando son visibles
+        const metricsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target.querySelector('.metric-value');
+                    if (valueElement && !valueElement.classList.contains('animated')) {
+                        valueElement.classList.add('animated');
+                        const endValue = valueElement.textContent;
+                        animateValue(valueElement, 0, endValue, 1500);
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.metric-box').forEach(box => {
+            metricsObserver.observe(box);
+        });
+
+        // Accesibilidad: foco visible para navegación con teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-nav');
+            }
+        });
+
+        document.addEventListener('mousedown', () => {
+            document.body.classList.remove('keyboard-nav');
+        });
+
+        // Log de interacciones (opcional, para analytics)
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                console.log('CTA clicked:', e.target.textContent.trim());
+                // Aquí podrías enviar a analytics si lo deseas
+            });
+        });
+
+        // Mensaje de bienvenida en consola
+        console.log('%c🎓 Universidad Mayor', 'font-size: 20px; font-weight: bold; color: #12636B;');
+        console.log('%c👋 Gracias por explorar nuestro proyecto educativo!', 'font-size: 14px; color: #A4222B;');
+        console.log('%c📚 Repositorio: github.com/ElK1000o/ia-entiende-lo-que-decimos', 'font-size: 12px; color: #444242;');
+    </script>
+</body>
+
+</html>

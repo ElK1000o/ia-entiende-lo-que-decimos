@@ -52,5 +52,5 @@ models_cache/
 # Others
 guides/
 sessions/
-presentation/
+# presentation/
 setup.bat
