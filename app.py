@@ -364,7 +364,6 @@ st.divider()
 st.markdown("""
 <div style='text-align: center; color: #666; padding: 20px;'>
     <p>🤖 <strong>La IA que entiende lo que decimos</strong> - Herramienta Educativa</p>
-    <p style='font-size: 12px;'>Desarrollada con ❤️ para estudiantes de 8º básico</p>
     <p style='font-size: 12px;'>Powered by Streamlit + Transformers + YAKE</p>
 </div>
 """, unsafe_allow_html=True)
